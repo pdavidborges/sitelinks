@@ -1,0 +1,125 @@
+/* 
+seletor{
+    propriedade: valor;
+} */
+
+body{
+    background-color: #222831;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+div{
+    background-color: #EEEEEE;
+    width: 80%;
+    max-width: 340px; /*largura (400 - 60 do padding)*/
+    
+    /*height: 561px;*/
+    text-align: center; /*alinhamento de texto*/ 
+    padding: 30px; /*espaçamento interno*/
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+
+    border-radius: 10px;
+}
+
+img{
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222831;
+    margin-bottom: 30px;
+}
+
+img:hover{
+    border-color: #393E46;
+}
+
+h1{    
+    color: #393E46;
+    font-size: 32px;
+    
+}
+
+h2{
+    color: #222831;
+    font-size: 20px;
+    
+}
+
+p{
+    /*font-size: 16px;*/
+    color: #666666;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0 0 30px 0; /*top right bottom left*/
+    padding: 0;
+}
+
+/*selecionando todos os links que estão DENTRO de uma <ul>*/
+ul a{    
+    display: block;
+    background-color: #393E46;
+    color: #FFFFFF;
+    text-decoration: none;    
+    margin-bottom: 5px; /*espaçamento externo*/
+    padding-top: 10px; /*espaçamento interno*/
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+
+/*ao passar o mouse no seletor*/
+ul a:hover{
+    background-color: #000000;
+}
+
+#link-rodape{
+    color: #222831;
+}
+
+#link-rodape:hover{
+    color: #666666;
+}
+
+
+/*If o tamanho da tela for de até 414px*/
+/*Utilizando Media Queries*/
+
+@media (max-width: 768px){
+
+    div{
+        max-width: 500px;
+    }
+
+}
+
+
+@media (max-width: 414px){
+
+    div{
+        width: 70%;
+        padding: 20px;
+    }
+
+    img{
+        width: 80px;
+        /*display: none;*/
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+}
